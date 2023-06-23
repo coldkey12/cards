@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="539.0" style="-fx-background-color: #1b1a3b;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cards.AllWordsPageController">
+   <children>
+      <Label layoutX="218.0" layoutY="24.0" text="Cards :)" textFill="WHITE">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="32.0" />
+         </font>
+      </Label>
+      <ListView fx:id="englishWordsList" layoutX="43.0" layoutY="112.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="wordField" layoutX="315.0" layoutY="136.0" promptText="word" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="translationField" layoutX="315.0" layoutY="173.0" promptText="translation" style="-fx-background-color: #ffffff;" />
+      <Button fx:id="addWordButton" layoutX="359.0" layoutY="213.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Add word" textAlignment="CENTER" />
+      <Label layoutX="26.0" layoutY="85.0" text=" words - (click on a word to see translation)" textFill="WHITE" />
+      <Button fx:id="deleteButton" layoutX="47.0" layoutY="331.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Delete word" />
+      <Label fx:id="logoutLabel" layoutX="28.0" layoutY="15.0" text="log out" textFill="WHITE" />
+      <Label fx:id="currentUsernameLabel" layoutX="460.0" layoutY="349.0" textFill="WHITE">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="alertLabel" layoutX="329.0" layoutY="112.0" prefHeight="17.0" prefWidth="132.0" textAlignment="CENTER" textFill="#d78585" />
+      <Label fx:id="translationLabel" layoutX="270.0" layoutY="85.0" text="..." textFill="WHITE">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="makeEasyButton" layoutX="142.0" layoutY="331.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Easy" textFill="#569054" />
+      <Button fx:id="makeHardButton" layoutX="196.0" layoutY="331.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="Hard" textFill="#ee6f6f" />
+   </children>
+</AnchorPane>

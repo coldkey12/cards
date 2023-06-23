@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="539.0" style="-fx-background-color: #1b1a3b;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cards.SignupController">
+   <children>
+      <Label layoutX="180.0" layoutY="46.0" text="Make an account" textFill="WHITE">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" layoutX="189.0" layoutY="127.0" promptText="username" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" />
+      <TextField fx:id="passwordField" layoutX="189.0" layoutY="165.0" promptText="password" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" />
+      <Button fx:id="signupButton" layoutX="241.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: #ffffff; -fx-background-radius: 7;" text="Signup" />
+      <Label fx:id="backLabel" layoutX="21.0" layoutY="14.0" text="back" textFill="WHITE" />
+      <Label fx:id="alertLabel" layoutX="119.0" layoutY="200.0" textFill="#d78585" />
+   </children>
+</AnchorPane>
